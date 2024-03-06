@@ -1,8 +1,18 @@
-
-import { assets } from "../../assets/assets"
-import "./main.css"
+import { useContext } from "react";
+import { assets } from "../../assets/assets";
+import "./main.css";
+import { Context } from "../../context/Context";
 const Main = () => {
-  return (
+	const {
+		onSent,
+		recentPrompt,
+		showResults,
+		loading,
+		resultData,
+		setInput,
+		input,
+	} = useContext(Context);
+	return (
 		<div className="main">
 			<div className="nav">
 				<p>Gemini</p>
@@ -35,11 +45,18 @@ const Main = () => {
 				</div>
 				<div className="main-bottom">
 					<div className="search-box">
-						<input type="text" placeholder="Enter the Prompt Here" />
+						<input
+							onChange={(e) => {
+								setInput(e.target.value);
+							}}
+							value={input}
+							type="text"
+							placeholder="Enter the Prompt Here"
+						/>
 						<div>
 							<img src={assets.gallery_icon} alt="" />
 							<img src={assets.mic_icon} alt="" />
-							<img src={assets.send_icon} alt="" />
+							<img src={assets.send_icon} alt="" onClick={()=>{onSent()}} />
 						</div>
 					</div>
 					<div className="bottom-info">
@@ -52,6 +69,6 @@ const Main = () => {
 			</div>
 		</div>
 	);
-}
+};
 
-export default Main
+export default Main;
