@@ -12,6 +12,10 @@ const Main = () => {
 		setInput,
 		input,
 	} = useContext(Context);
+
+    const handleCardClick = (promptText) => {
+			setInput(promptText);
+		};
 	return (
 		<div className="main">
 			<div className="nav">
@@ -28,20 +32,44 @@ const Main = () => {
 							<p>How Can i Help You Today?</p>
 						</div>
 						<div className="cards">
-							<div className="card">
+							<div
+								className="card"
+								onClick={() =>
+									handleCardClick("Suggest Some Place To Visit In Kerala")
+								}
+							>
 								<p>Suggest Some Place To Visit In Kerala </p>
 								<img src={assets.compass_icon} alt="" />
 							</div>
-							<div className="card">
+							<div
+								className="card"
+								onClick={() =>
+									handleCardClick(
+										"Brainstorm team bonding activities for our work retreat"
+									)
+								}
+							>
 								<p>Brainstorm team bonding activities for our work retreat </p>
 								<img src={assets.message_icon} alt="" />
 							</div>
-							<div className="card">
-								<p>Settle a debate: how should you store bread?</p>
+							<div
+								className="card"
+								onClick={() =>
+									handleCardClick("How to Create a Gyroscope using Disc?")
+								}
+							>
+								<p>How to Create a Gyroscope using Disc?</p>
 								<img src={assets.bulb_icon} alt="" />
 							</div>
-							<div className="card">
-								<p>Settle a debate: how should you store bread? </p>
+							<div
+								className="card"
+								onClick={() => {
+									handleCardClick(
+										"Create a Script for the youtube video about coding "
+									);
+								}}
+							>
+								<p>Create a Script for the youtube video about coding </p>
 								<img src={assets.code_icon} alt="" />
 							</div>
 						</div>
@@ -56,10 +84,10 @@ const Main = () => {
 							<img src={assets.gemini_icon} alt="" />
 							{loading ? (
 								<div className="loader">
-                                    <hr />
-                                    <hr />
-                                    <hr />
-                                </div>
+									<hr />
+									<hr />
+									<hr />
+								</div>
 							) : (
 								<p dangerouslySetInnerHTML={{ __html: resultData }}></p>
 							)}

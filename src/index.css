@@ -8,4 +8,14 @@
 #root{
   min-height: 100vh;
   display: flex;
+  animation:fadeIn 2.0s ;
+}
+
+@keyframes fadeIn{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
 }
