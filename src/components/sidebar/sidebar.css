@@ -4,11 +4,11 @@
 	flex-direction: column;
 	justify-content: space-between;
 	background-color: #f0f4f9;
-	padding: 2px 15px;
+	padding: 10px 15px;
    
 }
 .sidebar .top{
-    margin-top: 25px;
+    margin-top: 15px;
 }
 .sidebar img {
 	width: 20px;
