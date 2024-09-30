@@ -1,7 +1,7 @@
 .main{
     flex: 1;
     min-height: 100vh;
-    padding-bottom: 15vh;
+    padding-bottom: 25vh;
     position: relative;
 }
 .main .nav{
@@ -13,7 +13,7 @@
     color: #585858;
 }
 .main .nav img{
-    width: 40px;
+    width: 50px;
     border-radius: 50px;
 }
 .main-container{
@@ -24,7 +24,7 @@
     margin: 50px 0px;
     font-size: 56px;
     color:#c4c7c5;
-    font-weight: 500px;
+    font-weight: 600px;
 }
 .main .greet span{
     background: -webkit-linear-gradient(16deg,#4b90ff,#ff5546);
