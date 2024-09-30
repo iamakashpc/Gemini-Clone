@@ -46,11 +46,11 @@ const Sidebar = () => {
 			<div className="bottom">
 				<div className="bottom-item recent-entry">
 					<img src={assets.question_icon} alt="" />
-					{extended ? <p>Help</p> : null}
+					{extended ? <p>Help desk</p> : null}
 				</div>
 				<div className="bottom-item recent-entry">
 					<img src={assets.history_icon} alt="" />
-					{extended ? <p>Activity</p> : null}
+					{extended ? <p>History</p> : null}
 				</div>
 				<div className="bottom-item recent-entry">
 					<img src={assets.setting_icon} alt="" />

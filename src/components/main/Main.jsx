@@ -35,41 +35,41 @@ const Main = () => {
 							<div
 								className="card"
 								onClick={() =>
-									handleCardClick("Suggest Some Place To Visit In Kerala")
+									handleCardClick("Suggest Some Place To Visit In India.")
 								}
 							>
-								<p>Suggest Some Place To Visit In Kerala </p>
+								<p>Suggest Some Place To Visit In India.</p>
 								<img src={assets.compass_icon} alt="" />
 							</div>
 							<div
 								className="card"
 								onClick={() =>
 									handleCardClick(
-										"Brainstorm team bonding activities for our work retreat"
+										"Explain the process of photosynthesis in simple terms"
 									)
 								}
 							>
-								<p>Brainstorm team bonding activities for our work retreat </p>
+								<p>Explain the process of photosynthesis in simple terms </p>
 								<img src={assets.message_icon} alt="" />
 							</div>
 							<div
 								className="card"
 								onClick={() =>
-									handleCardClick("How to Create a Gyroscope using Disc?")
+									handleCardClick("How do you create a responsive navbar using CSS and JavaScript?")
 								}
 							>
-								<p>How to Create a Gyroscope using Disc?</p>
+								<p>How do you create a responsive navbar using CSS and JavaScript?</p>
 								<img src={assets.bulb_icon} alt="" />
 							</div>
 							<div
 								className="card"
 								onClick={() => {
 									handleCardClick(
-										"Create a Script for the youtube video about coding "
+										"What are some essential skills for becoming a front-end developer?"
 									);
 								}}
 							>
-								<p>Create a Script for the youtube video about coding </p>
+								<p>What are some essential skills for becoming a front-end developer?</p>
 								<img src={assets.code_icon} alt="" />
 							</div>
 						</div>
